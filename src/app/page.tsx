@@ -38,7 +38,7 @@ export default function FormPage() {
       });
       const data = await response.json();
       setMessage(data.message);
-      if (response.ok && false) {
+      if (response.ok) {
         setName("");
         setEmail("");
         setFileNumber("");
@@ -53,7 +53,7 @@ export default function FormPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br text-black from-blue-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-xl">
         <div className="text-center">
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
